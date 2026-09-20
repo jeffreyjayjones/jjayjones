@@ -560,3 +560,44 @@
   .wwj-engagement-grid article { border-left: 1px solid var(--wwj-line); }
   .wwj-footer .shell { align-items: flex-start; flex-direction: column; justify-content: center; padding-block: 18px; }
 }
+
+
+/* Revision 2026-09-20: testimonial contrast + engagement-card cleanup */
+.wwj-quotes .quote-grid figure {
+  background: var(--wwj-navy);
+  padding: 36px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wwj-quotes .quote-grid blockquote {
+  color: #ffffff !important;
+}
+
+.wwj-quotes .quote-grid figcaption strong {
+  color: #ffffff !important;
+}
+
+.wwj-quotes .quote-grid figcaption span {
+  color: #a9c8e8 !important;
+}
+
+.wwj-engagement-grid article {
+  position: relative;
+  padding-top: 34px;
+}
+
+.wwj-engagement-grid article::before {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 4px;
+  background: var(--wwj-orange);
+  margin-bottom: 28px;
+}
+
+.wwj-engagement-grid article > span {
+  display: none !important;
+}
