@@ -601,3 +601,18 @@
 .wwj-engagement-grid article > span {
   display: none !important;
 }
+
+
+/* Final testimonial contrast override */
+.wwj-page .wwj-quotes .quote-grid figure blockquote,
+.wwj-page .wwj-quotes .quote-grid figure blockquote p,
+.wwj-page .wwj-quotes .quote-grid figure figcaption strong {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.wwj-page .wwj-quotes .quote-grid figure figcaption,
+.wwj-page .wwj-quotes .quote-grid figure figcaption span {
+  color: #a9c8e8 !important;
+  opacity: 1 !important;
+}
