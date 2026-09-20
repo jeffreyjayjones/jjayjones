@@ -616,3 +616,12 @@
   color: #a9c8e8 !important;
   opacity: 1 !important;
 }
+
+/* Secondary hero path for ad visitors */
+.wwj-page .wwj-hero .proof-jump {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
