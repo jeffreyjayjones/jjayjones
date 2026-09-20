@@ -676,3 +676,49 @@
     mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.12) 36%, #000 82%, #000 100%);
   }
 }
+
+
+/* Final mobile viewport fix: preserves approved desktop hero */
+@media (max-width: 620px) {
+  .wwj-page,
+  .wwj-page .wwj-hero {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .wwj-page .shell {
+    width: calc(100% - 30px);
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .wwj-page .wwj-hero-grid {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 8px;
+  }
+
+  .wwj-page .wwj-hero-grid > *,
+  .wwj-page .wwj-hero-copy,
+  .wwj-page .wwj-deck {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .wwj-page .wwj-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.35rem, 10.6vw, 3.15rem);
+    line-height: .96;
+    letter-spacing: -.04em;
+  }
+
+  .wwj-page .wwj-deck {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+}
