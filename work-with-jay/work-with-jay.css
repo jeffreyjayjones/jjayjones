@@ -722,3 +722,11 @@
     overflow-wrap: break-word;
   }
 }
+
+
+/* Final mobile header-clearance fix */
+@media (max-width: 620px) {
+  .wwj-page .wwj-hero {
+    padding-top: 5.25rem;
+  }
+}
