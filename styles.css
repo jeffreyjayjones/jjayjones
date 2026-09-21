@@ -55,3 +55,10 @@ footer{background:var(--navy);color:#8f9cad;padding:28px 0;font-size:.75rem}foot
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button:hover{transform:none}}
 
 .card-links{margin:0}.card-links a{white-space:nowrap}
+
+/* JJJ brand mark integration — 2026-09-21 */
+.brand{flex-direction:row;align-items:center;gap:12px}
+.brand-mark{display:block;width:42px;height:42px;object-fit:contain;flex:0 0 auto}
+.brand-copy{display:flex;flex-direction:column;line-height:1.15}
+.brand-copy>span{font-size:.72rem;color:#aeb8c5;margin-top:5px;letter-spacing:.02em}
+@media(max-width:700px){.brand-mark{width:36px;height:36px}.brand-copy>span{display:none}}
