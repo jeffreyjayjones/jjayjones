@@ -81,3 +81,19 @@ footer{background:var(--navy);color:#8f9cad;padding:28px 0;font-size:.75rem}foot
   .main-footer-brand img{width:42px !important;height:42px !important;max-width:42px !important;max-height:42px !important;flex-basis:42px !important}
   .site-footer .main-footer-legal{grid-template-columns:1fr;gap:8px}
 }
+
+/* Main header light treatment — 2026-09-21 */
+.site-header{
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid rgba(11,24,41,.10);
+  backdrop-filter:blur(12px);
+}
+.site-header .brand{color:var(--navy)}
+.site-header .brand-copy>span{color:var(--muted)}
+.site-header nav a{color:var(--navy);font-weight:700}
+.site-header nav a:hover{color:#000}
+.site-header .nav-cta{
+  border:1px solid #ef6b3a;
+  border-radius:999px;
+  padding:10px 15px;
+}
