@@ -63,15 +63,21 @@ footer{background:var(--navy);color:#8f9cad;padding:28px 0;font-size:.75rem}foot
 .brand-copy>span{font-size:.72rem;color:#aeb8c5;margin-top:5px;letter-spacing:.02em}
 @media(max-width:700px){.brand-mark{width:36px;height:36px}.brand-copy>span{display:none}}
 
-
-/* Main-site JJJ header + footer refinement — 2026-09-21 */
-.site-header .brand-mark{width:52px;height:52px;filter:grayscale(1) brightness(0) invert(1);opacity:.96}
-.site-header .brand{gap:15px}
-.site-footer{background:#040d16;color:#aeb8c1;padding:0;font-size:.82rem}
-.site-footer .footer-brand-row{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid rgba(255,255,255,.10)}
-.footer-brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
-.footer-brand img{display:block;width:46px;height:46px;object-fit:contain;filter:grayscale(1) brightness(0) invert(1);opacity:.92}
-.footer-brand strong{letter-spacing:.08em;font-size:.82rem}
-.site-footer .footer-legal{display:grid;grid-template-columns:.65fr 1.35fr;gap:40px;padding-top:22px;padding-bottom:24px}
-.site-footer .footer-legal p{margin:0}
-@media(max-width:700px){.site-header .brand-mark{width:44px;height:44px}.site-header .brand{gap:11px}.site-footer .footer-brand-row{align-items:flex-start;flex-direction:column;justify-content:center;gap:7px;padding-block:18px}.footer-brand img{width:42px;height:42px}.site-footer .footer-legal{grid-template-columns:1fr;gap:8px}}
+/* Main-site logo correction — 2026-09-21 */
+.site-header .brand{gap:14px}
+.site-header .brand-mark{display:block !important;width:46px !important;height:46px !important;max-width:46px !important;max-height:46px !important;object-fit:contain !important;flex:0 0 46px !important}
+.site-footer{background:#040d16;color:#aeb8c1;padding:0;font-size:.78rem}
+.site-footer .main-footer-row{display:flex !important;grid-template-columns:none !important;align-items:center;justify-content:space-between;gap:24px;min-height:82px;border-bottom:1px solid rgba(255,255,255,.10)}
+.main-footer-brand{display:flex;align-items:center;gap:11px;color:#fff;text-decoration:none;flex:0 0 auto}
+.main-footer-brand img{display:block !important;width:46px !important;height:46px !important;max-width:46px !important;max-height:46px !important;object-fit:contain !important;flex:0 0 46px !important}
+.main-footer-brand strong{font-family:var(--sans);font-size:.82rem;letter-spacing:.08em}
+.site-footer .main-footer-row>span{color:#aeb8c1}
+.site-footer .main-footer-legal{display:grid;grid-template-columns:.65fr 1.35fr;gap:40px;padding-top:18px;padding-bottom:22px}
+.site-footer .main-footer-legal p{margin:0}
+@media(max-width:700px){
+  .site-header .brand-mark{width:40px !important;height:40px !important;max-width:40px !important;max-height:40px !important;flex-basis:40px !important}
+  .site-header .brand{gap:10px}
+  .site-footer .main-footer-row{align-items:flex-start;flex-direction:column;justify-content:center;gap:6px;padding-block:16px}
+  .main-footer-brand img{width:42px !important;height:42px !important;max-width:42px !important;max-height:42px !important;flex-basis:42px !important}
+  .site-footer .main-footer-legal{grid-template-columns:1fr;gap:8px}
+}
